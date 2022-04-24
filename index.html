@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Momentum</title>
+</head>
+
+<body>
+
+  <form class="hidden" id="login-form">
+    <h1>당신의 이름은 무엇입니까?</h1>
+    <input type="text" required maxlength="15" placeholder="What is your name?">
+  </form>
+
+  <div id="lay-out">
+
+    <aside class="location">
+      <span class="location__location"></span>
+      <span class="location__weather"></span>
+      <span class="location__temp"></span>
+    </aside>
+
+    <main class="main-contents">
+      <h2 class="main-contents__clock">00:00:00</h2>
+      <h1 class="main-contents__greeting hidden"></h1>
+      <div class="main-contents__quote">
+        <span></span>
+        <span></span>
+      </div>
+    </main>
+
+    <aside class="todo-contents">
+      <h1 class="todo-contents__title">오늘의 계획 작성하기!!!</h1>
+      <form class="todo-contents__todo-form">
+        <input type="text" placeholder="할 일을 적고 엔터를 누르세요" required maxlength="15" />
+      </form>
+      <ul class="todo-contents__todo-list"></ul>
+    </aside>
+
+
+  </div>
+
+  <script src="js/greeting.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/quotes.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/location.js"></script>
+</body>
+
+</html>
