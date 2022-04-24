@@ -2,10 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
 
 
-.hidden {
-  display: none;
-}
-
 .line-through {
   text-decoration: line-through;
 }
@@ -16,9 +12,31 @@ body {
   color: white;
 }
 
+#login-form {
+  margin-top: 325px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login-form h1 {
+  font-weight: 700;
+  font-size: 50px;
+}
+
+#login-form input {
+  border-radius: 25px;
+  text-align: center;
+  background-color: white;
+  margin-top: 55px;
+  border: none;
+  font-size: 30px;
+  width: 400px;
+  height: 50px;
+}
+
 #lay-out {
   display: flex;
-  
 }
 
 #lay-out .location {
@@ -89,14 +107,16 @@ body {
 
 .todo-contents__todo-form input {
  border: none;
- border-radius: 20px;
- width: 300px;
- height: 40px;
+ border-radius: 30px;
+ padding: 0px 15px;
+ font-size: 16px;
+ width: 320px;
+ height: 45px;
 }
 
 .todo-contents__todo-form input::placeholder {
   color: black;  
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   opacity: 0.6;
 }
